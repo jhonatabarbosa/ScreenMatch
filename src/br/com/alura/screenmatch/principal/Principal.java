@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-
         Filme meuFilme = new Filme("The Matrix", 1999);
         meuFilme.setDuracaoEmMinutos(135);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -21,6 +20,9 @@ public class Principal {
         meuFilme.avalia(9);
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(+meuFilme.pegaMedia());
+
+
+
 
         Serie lost = new Serie("Lost", 2000);
         lost.exibeFichaTecnica();
@@ -58,5 +60,8 @@ public class Principal {
         System.out.println("Tamanho da lista: " + listaDeFilmes.size());
         System.out.println("Primeiro Filme: " + listaDeFilmes.get(0));
         System.out.println(listaDeFilmes);
+        System.out.println("toString do filme " + listaDeFilmes.get(0).toString());
+
+
     }
 }

@@ -7,6 +7,8 @@ import br.com.alura.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -25,14 +27,14 @@ public class PrincipalComListas {
         lista.add(meuFilme);
         lista.add(outroFilme);
         lista.add(lost);
-        for (Titulo item : lista) {
-            System.out.println("Nome: " + item.getNome());
+        for (Titulo item: lista) {
+            System.out.println(item.getNome());
             if (item instanceof Filme filme && filme.getClassificacao() > 2) {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        List<String> buscaPorArtista = new LinkedList<>();
         buscaPorArtista.add("Adam Sandler");
         buscaPorArtista.add("Jhonata");
         buscaPorArtista.add("Evellyn");
